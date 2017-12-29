@@ -1,0 +1,30 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list >
+    <ion-item>
+      <ion-label >Name </ion-label>
+      <ion-input [(ngModel)]="name" type="text" placeholder="please enter name" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Age </ion-label>
+      <ion-input [(ngModel)]="age" type="number" placeholder="please enter age"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button (click)="save()" block color="danger"  [disabled]="!name || !age" >Save</button>
+  <button ion-button (click)="go()" round color="secondary" >All Members</button>
+  
+</ion-content>
